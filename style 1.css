@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*/
+/* HTML5 display-role reset for older browsers */
+/*
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+
+/*My code*/
+
+* {
+  text-decoration: none;
+}
+
+header{
+  position: sticky;
+  top: 0;
+}
+
+header{
+  background-color: #fff;
+  width: 100%;
+  height: 120px;
+}
+
+
+header .hearderbrand {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  color: #87ceeb;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+header nav ul {
+  display: block;
+  margin: 0 auto ;
+  width: fit-content;
+
+}
+header nav ul li {
+  display:block;
+	word-spacing: 50px;
+  float: left;
+  list-style: none;
+  padding: 0 20px;
+}
+
+
+ header nav ul li a {
+   font-family: Roboto;
+   font-size: 30px;
+   color: #87ceeb;
+ }
+ header .headercases {
+   display: none;
+ }
+
+ @media only screen and (min-width:1000px){
+ header {
+   height: 120px;
+ }
+ header .hearderbrand {
+   margin:5px 5px;
+   text-align: left;
+	 line-height: 10px;
+   padding: 40px 40px 40px 0;
+	 border-right: 3px solid #111;
+	 float: left;
+ }
+ header nav ul {
+   margin: 5px 0px 0px 5px ;
+   float: left;
+
+ }
+
+  header nav ul li a {
+		font-weight: bold;
+    color: #87ceeb;
+		line-height: 100px;
+		text-transform: uppercase;
+  }
+  header .headercases {
+    display: block;
+		font-family: Roboto;
+    font-size: 20px;
+    color: #87ceeb;
+		text-transform: uppercase;
+		line-height: 90px;
+		border: 1px solid #111;
+		float: right;
+		margin-right:20px;
+		padding: 0 30px;
+  }
+}
+
+ /*Create*/
+
+ .createbanner h2{
+	 font-family: sans-serif;
+	 font-style: italic;
+	 font-size: 25px;
+	 font-weight: bold;
+	 color: #fff;
+	 text-align: center;
+	 text-shadow: 2px 2px #111;
+ }
+
+ .createbanner h1{
+	 font-family: serif;
+	 font-style: italic;
+	 font-size: 20px;
+	 font-weight:bold;
+	 line-height: 2;
+	 word-spacing: 10px;
+	 color: #fff;
+	 text-align: center;
+	 text-shadow: 5px 5px 8px #111;
+}
+
+ .createbanner {
+	 width: 100%;
+	 height:150px;
+	 background-image: url('image/MIE.jpg');
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size:cover;
+	 padding: 20px 10px;
+	 line-height: normal;
+ }
+.createbox div {
+	margin: 20px 20px 0;
+	width: calc(100%-40px);
+	height: 100px;
+	background-color: #A9A9A9;
+
+}
+
+    .blue_btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50px;
+      padding-top: 20px;
+    }
+
+.createbox_ div h3 {
+    width: 350px;
+	font-family: Roboto;
+	font-size: 32px;
+	font-weight:bold;
+    padding: 10px;
+	color: #111;
+	background-color: #2196f3;
+	overflow: hidden;
+	transition: 0.2s;
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 8px #111;
+    margin: 10px;
+}
+
+.createbox_ div h3:hover{
+  color: #FF6347;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3;
+  transition: .3s;
+}
+
+	.wrapper_{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+	}
+
+
+@media only screen and (min-width:1000px){
+	.wrapper_{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.createbanner {
+ 	 width: 100%;
+ 	 height:250px;
+
+ }
+ .createbanner h1{
+	 display: flex;
+	 width: 550px;
+	 margin: 0 auto;
+ }
+
+ .createbox{
+	 overflow: hidden;
+ }
+ .createbox div {
+ 	margin: 20px 10px 0;
+	height: 100px;
+	width: 400px;
+ 	background-color: #FFF;
+	float: left;
+
+ }
+ .box1{
+	 width:50%;
+
+ }
+ .box2{
+	width: 50%;
+ }
+ .createbox div h3 {
+ 	line-height:80px;
+ }
+}
+
+
+/*footer*/
+
+footer {
+	width: 770px;
+	background-color: #111;
+  overflow: hidden;
+
+}
+
+footer table td {
+	display:block;
+  list-style: georgian;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+footer table td a {
+	font-family: Roboto;
+	font-size: 24px;
+	color: #fff;
+}
+
+.footervoice {
+	display: none;
+}
+
+.footersm {
+	width: 40px;
+  float: right;
+  padding-right: 20px;
+}
+.footersm img {
+  display: block;
+	width: 100%;
+}
+
+@media only screen and (min-width:1000px){
+	.footervoice{
+		display: block;
+	}
+	footer table {
+		width: fit-content;
+		float: left;
+	}
+	footer table td {
+		font-family: Roboto;
+		font-size: 24px;
+		color: #fff;
+		line-height: 40px;
+		text-transform: uppercase;
+	}
+}
